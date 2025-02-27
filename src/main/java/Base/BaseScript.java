@@ -125,7 +125,8 @@ public class BaseScript {
 	    Assert.assertEquals(landingPageLabel, expectedLabel);	
 	    test1.log(LogStatus.PASS, "TSLA Inc. is Captured and Asserted => " + landingPageLabel);
 	    Thread.sleep(1000);
-	    WebElement element2 = driver.findElement(By.xpath("//span[contains(@class,'yf-ipw1h0')][normalize-space()='337.80']"));
+	    //WebElement element2 = driver.findElement(By.xpath("//span[contains(@class,'yf-ipw1h0')][normalize-space()='337.80']"));
+	    WebElement element2 = driver.findElement(By.xpath("//span[contains(@class,'yf-ipw1h0')][@data-testid='qsp-price']"));
 	    String StockCost = element2.getAttribute("textContent");
 	    System.out.println(StockCost);
 	    test1.log(LogStatus.PASS, "TSLA Stock Price is Captured =>  " + StockCost);

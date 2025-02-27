@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Temp.java(failed)">
+  <test thread-count="5" name="BaseScript.java(failed)">
     <classes>
-      <class name="Base.Temp">
+      <class name="Base.BaseScript">
         <methods>
-          <include name="test3"/>
-          <include name="endTest"/>
           <include name="startTest"/>
-          <include name="test5"/>
+          <include name="endTest"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- Base.Temp -->
+      </class> <!-- Base.BaseScript -->
     </classes>
-  </test> <!-- Temp.java(failed) -->
+  </test> <!-- BaseScript.java(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
